@@ -1,0 +1,122 @@
+.banner__first {
+  .banner__item {
+    @include collum(15px, 15px);
+    @include flex(50%);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color_slide;
+    @include border-left(15px,white);
+    @include border-right(15px,white);
+
+    .banner__text {
+      z-index: 1;
+      @include collum(0px, 0px);
+      @include flex(50%);
+      padding: 20px 0px 20px 10px;
+
+      h3 {
+        font-size: $font_super;
+      }
+      h4 {
+        font-size: $font_small;
+        color: $color_list;
+      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+        font-size: $font_price;
+        background-color: $color_or;
+        color: black;
+        padding: 10px 6%;
+        font-weight: $font_w600;
+        margin:10px 0;
+      }
+      p {
+        display: inline-block;
+        padding: 10px 0px;
+        font-weight: $font_w600;
+        span {
+          color: red;
+        }
+      }
+    }
+    .banner__img {
+      background-color: $color_slide;
+      z-index: 0;
+      @include collum(0px, 0px);
+      @include flex(50%);
+      margin: auto 0;
+    }
+    .banner__sale {
+      position: absolute;
+      width: 85px;
+      height: 85px;
+      @extend %border_radius_circle;
+      background-color: $color_or;
+      right: 5%;
+      top: 5%;
+      .banner__sale__circle {
+        width: 75px;
+        height: 75px;
+        background-color: $color_or;
+        @extend %border_radius_circle;
+        @include border(1px,$color_white);
+
+        margin: 5px;
+        position: relative;
+        .banner__sale__circle__text {
+          position: absolute;
+          left: 22px;
+          top: 20px;
+          h3 {
+            color: $color_white;
+            font-size: $font_small;
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      & {
+        @include flex(100%);
+        margin: 15px auto;
+      }
+    }
+    @media (max-width: 435px) {
+      & {
+        .banner__text {
+          h3 {
+            font-size: 32px;
+          }
+          h4 {
+            font-size: 6px;
+          }
+          a {
+            font-size: 10px;
+          }
+          p {
+            font-size: 6px;
+            padding: 0;
+          }
+        }
+        .banner__sale {
+          width: 45px;
+          height: 45px;
+          top:22%;
+          right: 8%;
+          .banner__sale__circle{
+            width: 35px;
+            height: 35px;
+            .banner__sale__circle__text{
+              left:8px;
+              top: 8px;
+              h3{
+                font-size: 8px;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

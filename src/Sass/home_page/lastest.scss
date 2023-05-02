@@ -1,0 +1,17 @@
+.lastest {
+  @extend %p-col-2;
+  .title__last {
+    @include collum(15px, 15px);
+    @include display_flex();
+    padding-bottom: 40px;
+  }
+  @media (max-width: 1000px) {
+    & .product__last {
+      .text__last {
+        .item__button {
+          display: block;
+        }
+      }
+    }
+  }
+}

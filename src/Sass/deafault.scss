@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+.container {
+  @include container();
+  .row {
+    @include row();
+    &.-collum{
+      flex-direction: column;
+      max-height: 800px;
+    }
+  }
+}
+.img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+.breadcrumb{
+  padding : 30px 10px;
+  span {
+    color: $color_p-gray;
+    padding:0  10px;
+    &:hover{
+      color:$color-or;
+    }
+  }
+  & > span:last-child{
+      color : $color_black;
+  }
+}
+a{
+  text-decoration: none;
+}

@@ -1,0 +1,193 @@
+.product__detail {
+  @include collum(15px, 15px);
+  @include display_flex();
+  margin-top: 30px;
+  .product__detail__img {
+    @include flex(50%);
+    & > img {
+      max-height: 296px;
+      width: 100%;
+      @include flex(100%);
+    }
+    .product__detail__bonus {
+      @include flex(100%);
+      @extend %p-col-1;
+
+      display: flex;
+      img {
+        @include flex(20%);
+      }
+    }
+  }
+  .product__detail__info {
+    @include flex(50%);
+    @include collum(15px, 0px);
+    h3 {
+      font-size: $font_toogle;
+    }
+    .star {
+      @include rate__star();
+      span {
+        margin: 0 8px;
+        display: inline-block;
+        height: 13px;
+        background-color: gray;
+        width: 1px;
+      }
+      a {
+        color: black;
+      }
+    }
+    h4 {
+      padding: 10px 0;
+      color: red;
+      font-size: $font_price;
+      @include border-bottom(1px, $color_banner_2);
+    }
+    h5 {
+      padding: 5px 0;
+      font-size: $font_small;
+    }
+    p {
+      font-size: $font_tiny;
+      color: $color_list;
+      padding-bottom: 10px;
+      @include border-bottom(1px, $color_banner_2);
+    }
+    .info__dropdown {
+      @include display_flex();
+      @extend %p-col-1;
+      @include border-bottom(1px, $color_banner_2);
+      .dropdown__item {
+        @include flex(50%);
+        position: relative;
+        input {
+          width: 85%;
+          padding: 5px;
+        }
+        i {
+          position: absolute;
+          color: $color_list;
+          right: 20%;
+          bottom: 8px;
+        }
+      }
+    }
+    .info__count {
+      @extend %p-col-1;
+      @include display_flex();
+      .count__input {
+        position: relative;
+        display: inline-flex;
+        input {
+          text-align: center;
+          padding: 10px;
+          width: 110px;
+          font-size: $font_small;
+        }
+        .info__count__carret {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          color: $color_list;
+          right: 5px;
+          top: 3px;
+        }
+      }
+      .count__buy {
+        margin-left: 10px;
+        a {
+          text-decoration: none;
+          display: inline-block;
+          width: 110px;
+          padding: 10px;
+          background-color: $color_or;
+          color: $color_white;
+          text-align: center;
+        }
+      }
+      .fb-share-button {
+        margin-left: 10px;
+      }
+    }
+    .info__social {
+      a {
+        i {
+          font-size: $font_tiny;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    & {
+      .product__detail__img {
+        @include flex(100%);
+        text-align: center;
+      }
+      .product__detail__info {
+        @include flex(100%);
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
+.product__tag {
+  @extend %p-col-2;
+  @include collum(15px, 15px);
+  .tag__item {
+    display: flex;
+    a {
+      font-size: 14px;
+      @extend %p-1;
+      @include border(1px, $color_list);
+      color: $color_black;
+      &.-active {
+        background-color: black;
+        color: $color_or;
+        &:hover {
+          @include border(1px, $color_list);
+          color: $color_black;
+          background-color: white;
+        }
+      }
+      &:hover {
+        background-color: black;
+        color: $color_or;
+      }
+    }
+  }
+  .tag__text {
+    padding: 30px 15px;
+    color: $color_list;
+    font-size: $font_13;
+    margin: 14px 0;
+    @include border(1px, $color_list);
+  }
+}
+
+.product__same {
+  @extend %p-col-2;
+  @include collum(15px, 15px);
+  .same__title {
+    @include display_flex();
+    @include collum(15px, 15px);
+    .title__text {
+      @include flex(45%);
+    }
+    .title__togle {
+      @include flex(35%);
+    }
+    @media (min-width: 768px) {
+      & {
+        .title__togle {
+          @include flex(15%);
+        }
+      }
+    }
+  }
+  .same__item {
+    @extend %p-col-2;
+    @include collum(15px, 15px);
+    @include display_flex();
+  }
+}

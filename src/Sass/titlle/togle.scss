@@ -1,0 +1,22 @@
+.title__togle {
+  font-size: $font_toogle;
+  margin-left: auto;
+  @include flex(22%);
+  @media (min-width:768px) {
+    & {
+      @include flex(10%);
+    }
+  }
+  .togle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    float: right;
+    @include border(1px,$color_p-gray);
+
+    &:hover {
+      background-color: black;
+      color: $color_white;
+    }
+  }
+}

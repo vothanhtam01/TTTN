@@ -1,0 +1,75 @@
+.about__me {
+  @extend %pt-4;
+  background-color: $color_gray;
+  .container{
+    @include border-bottom(1px,$color_p_gray);
+  }
+  .about__item {
+    @include collum(15px, 15px);
+    @include flex(17.5%);
+
+    &.-large {
+      @include flex(30%);
+      p {
+        padding-top: 2px;
+      }
+      ul {
+        list-style: none;
+        @extend %pt-2;
+        li {
+          display: flex;
+          padding: 15px 100px 15px 0px;
+          i {
+            font-size: $font_18;
+            color: black;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    h3 {
+      font-size: 14px;
+      @extend %pb-2;
+      i {
+        color: $color_or;
+        margin-right: 10px;
+      }
+    }
+    p {
+      font-size: $font_13;
+      color: $color_about;
+    }
+    ul {
+      list-style: none;
+      li {
+        display: flex;
+        padding-bottom: 21px;
+        i {
+          font-size: $font_18;
+          color: black;
+          margin-right: 10px;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      & {
+        padding-bottom: 1rem;
+        @include flex(100%);
+      }
+      &.-large {
+        @include flex(100%);
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      h3 {
+        font-size: 10px;
+      }
+      p {
+        font-size: 9px;
+        i{
+          font-size: 9px;
+        }
+      }
+    }
+  }
+}

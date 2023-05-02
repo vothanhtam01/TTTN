@@ -1,0 +1,37 @@
+.main__blog {
+  @extend %p-col-2;
+  .list__blog {
+    padding-bottom: 80px;
+    .list__blog__text {
+      h3 {
+        font-size: $font_medium;
+        @extend %p-col-1;
+        color: $color_black;
+      }
+      .post-by {
+        @include display_flex();
+        @extend %p-col-1;
+        p {
+          @extend %pr-2;
+        }
+      }
+      p {
+        @extend %pb-2;
+        color: $color_list;
+        font-size: $font_13;
+        &.-boder {
+          @include border-bottom(1px,$color_border)
+        }
+        span {
+          color: $color_or;
+        }
+        a {
+          color: $color_or;
+        }
+        i {
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}

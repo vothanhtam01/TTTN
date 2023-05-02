@@ -1,0 +1,43 @@
+.brand {
+  @extend %pt-2;
+  background-color: $color_gray;
+  .brand__img {
+    @include collum(15px, 15px);
+    @include flex(20%);
+    text-align: center;
+  }
+  @media (max-width: 500px) {
+    & {
+      .brand__img {
+        &.-hide {
+          display: none;
+        }
+        &.-only {
+          @include flex(100%);
+        }
+      }
+      .arrow {
+        &.left {
+          left:15px;  
+        }
+        &.right {
+          right:15px;
+        }
+      }
+    }
+  }
+  .arrow {
+    position: absolute;
+    &.left {
+      top: 35%;
+    }
+    &.right {
+      top: 35%;
+      right: 0px;
+    }
+    a {
+      font-size: 30px;
+      color: rgb(200, 200, 200);
+    }
+  }
+}

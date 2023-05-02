@@ -1,0 +1,18 @@
+.title__text {
+  margin: auto 0;
+  @media (min-width: 768px) {
+    & {
+      @include flex(30%);
+      padding-right: 20px;
+    }
+  }
+  h3 {
+    color: $color_black;
+    font-size: $font_18;
+    i {
+      color: $color_or;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+
+.slider__file {
+  width: 750px;
+  height: 500px;
+  background-color: $color_slide;
+  .slider__text {
+    @include collum($pixel_15, $pixel_15);
+    padding: 5rem 2rem;
+    width: 400px;
+    @include button();
+    .item__button{
+      a{
+        width: 115px;
+      }
+    }
+    h3 {
+      font-size: $font_large;
+    }
+    h1 {
+      font-size: 72px;
+      font-weight: $font_w1000;
+      color: $color_or;
+    }
+    .text__check {
+      display: flex;
+      @extend %p-col-1;
+      span {
+        @include border(2px,$color_or);
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        color: $color_or;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 10px;
+        i {
+          padding: 5px 0;
+        }
+      }
+      p {
+        font-size: $font_medium;
+        padding: 7px 0;
+      }
+    }
+  }
+  .slider__img{
+    img{
+      width: 350px;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.banner__second {
+  .container{
+    background-color: rgb(238, 238, 238);
+
+  }
+  .banner__img {
+    @include collum(15px, 15px);
+    @include flex(50%);
+  }
+  .banner__text {
+    @include collum(15px, 15px);
+    @include flex(50%);
+    @extend %p-1;
+    text-align: center;
+    h3 {
+      font-size: 36px;
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+    }
+    @include button();
+    .item__button {
+      a {
+        &.-right {
+          background-color: rgb(238, 238, 238);
+          color: black;
+          @include border-bottom(0.5px,black);
+
+        }
+      }
+    }
+  }
+  @media (max-width:767px) {
+    .banner__img{
+      @include flex(100%);
+      @include border-left(15px,white);
+      @include border-right(15px,white);
+
+    }
+    .banner__text{
+      display: none;
+    }
+    
+  }
+}

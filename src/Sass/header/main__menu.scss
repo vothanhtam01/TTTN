@@ -1,0 +1,108 @@
+.main__menu {
+  background-color: $color_bg-menu;
+  .menu__list {
+    @include collum(15px, 15px);
+    .menu__ul {
+      ul {
+        list-style: none;
+        li {
+          display: inline-block;
+          padding: 1.3rem;
+          a {
+            text-decoration: none;
+            color: $color_white;
+            font-size: $font_medium;
+          }
+          &:hover {
+            background-color: $color_or;
+          }
+        }
+      }
+    }
+  }
+  .menu__hide {
+    @include collum(15px, 15px);
+    display: flex;
+    flex-wrap: wrap;
+    .menu__ul {
+      display: none;
+      @include flex(100%);
+      ul {
+        list-style: none;
+        li {
+          padding: 1.3rem;
+          a {
+            display: inline-block;
+            text-decoration: none;
+            color: $color_white;
+            font-size: $font_medium;
+            width: 100%;
+          }
+          &:hover {
+            background-color: $color_or;
+          }
+        }
+      }
+    }
+    .nav__menu {
+      .span__menu {
+        padding: 1.3rem;
+        cursor: pointer;
+        span {
+          display: block;
+          height: 3px;
+          width: 16px;
+          background: $color_white;
+          margin: 3px 0;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .menu__list {
+      display: flex;
+    }
+    .menu__hide {
+      display: none;
+    }
+  }
+  @media (max-width: 991px) {
+    .menu__list {
+      display: none;
+    }
+    .menu__hide {
+      display: flex;
+    }
+  }
+}
+
+.menu__basket {
+  position: absolute;
+  align-self: center;
+  display: flex;
+  flex-direction: row-reverse;
+  right: 0px;
+  top: 10px;
+
+  .basket__icon {
+    padding: 0.8rem;
+    a {
+      i {
+        color: $color_white;
+      }
+    }
+  }
+  .basket__count {
+    @extend %border_radius_circle;
+    background-color: $color_or;
+    width: 20px;
+    height: 20px;
+    margin-right: 10%;
+    margin-left: -20%;
+    p {
+      text-align: center;
+      color: $color_white;
+    }
+  }
+}

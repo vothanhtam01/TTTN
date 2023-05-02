@@ -1,0 +1,118 @@
+footer {
+  .main__foot {
+    @extend %p-col-2;
+    background-color: $color_gray;
+    .pay__item {
+      @include collum(15px, 15px);
+      @include flex(50%);
+      .foot__bank {
+        @include display_flex();
+        @extend %pt-1;
+        .bank__img {
+          @include flex(25%);
+          @include collum(0, 15px);
+        }
+      }
+      .foot__answer {
+        @include display_flex();
+        padding-top: 35px;
+        .answer__item {
+          @include collum(0, 15px);
+          @include flex(50%);
+          .answer__icon {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            color: $color_or;
+            @include border(1px,$color_or);
+            @extend %border_radius_circle;
+            text-align: center;
+            i {
+              padding-top: 20px;
+            }
+          }
+          .answer__text {
+            display: inline-block;
+            padding-left: 20px;
+            p {
+              font-size: $font-13;
+            }
+            span {
+              color: red;
+              font-weight: $font_w1000;
+              font-size: $font_18;
+            }
+          }
+        }
+      }
+
+      p {
+        color: $color_about;
+        $font: $font-13;
+      }
+    }
+    @media (max-width: 767px) {
+      & {
+        .pay__item {
+          @include flex(100%);
+          .foot__bank {
+            padding-bottom: 2rem;
+            .bank__img {
+              @include flex(50%);
+            }
+          }
+          .foot__answer {
+            .answer__item {
+              @include flex(100%);
+              padding-bottom: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bonus__foot {
+    background-color: $color_bg_menu;
+    @extend %p-2;
+    .bonus__text {
+      @include collum(15px, 15px);
+      @include flex(50%);
+      p {
+        font-size: $font-13;
+        color: $color_about;
+        display: inline;
+        span {
+          color: $color_white;
+        }
+      }
+      ul {
+        list-style: none;
+        @include display_flex();
+        li {
+          display: inline-block;
+          padding: 0px 7.5px;
+          a {
+            font-size: $font-13;
+            color: $color_about;
+            text-decoration: none;
+          }
+        }
+      }
+      @media (max-width: 767px) {
+        & {
+          @include flex(100%);
+          text-align: center;
+          padding-bottom: 1rem;
+          p {
+            display: block;
+          }
+          ul {
+            li {
+              @include flex(33%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

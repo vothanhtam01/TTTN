@@ -1,0 +1,43 @@
+.error__main {
+  @extend %p-col-2;
+  .error__text{
+    @include collum($pixel_15,$pixel_15);
+    text-align: center;
+    @include flex(60%);
+    margin: auto 0;
+    @include button();
+    .item__button{
+      a{
+        display: inline-block;
+        width: $pixel_150;
+        height: $pixel_50;
+        @extend %p-18;
+      }
+    }
+    h1{
+      color: $color_or;
+      font-size: 100px;
+    }
+    h4{
+      color: $color_black;
+      font-size: $font_18;
+      font-weight: $font_w700;
+    }
+  }
+  .error_img{
+    @include collum($pixel_15,$pixel_15);
+    text-align: center;
+    @include flex(40%);
+  }
+  @media(max-width: 767px){
+    .error__text{
+      @include flex(100%);
+      h1{
+        font-size: 50px;
+      }
+    }
+    .error_img{
+      @include flex(100%);
+    }
+  }
+}

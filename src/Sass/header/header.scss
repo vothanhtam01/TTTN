@@ -1,0 +1,87 @@
+header {
+  background-color: $color_gray;
+  @include border-bottom(1px,$color_border);
+  height: 50px;
+  overflow: hidden;
+  .menu__icon {
+    @include collum(15px, 15px);
+    @include flex(25%);
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        display: inline-block;
+        max-width: $width_50;
+        @extend %p-1;
+        border-right: 1px solid $color_border;
+        &.-left {
+          border-left: 1px solid $color_border;
+        }
+        a {
+          display: block;
+          margin-left: 4px;
+          width: 50px;
+          color: $color_black;
+          text-decoration: none;
+          i {
+            font-size: $font_small;
+          }
+        }
+
+        &:hover {
+          a {
+            color: $color_white;
+          }
+          background-color: $color_or;
+          border: 0px;
+        }
+      }
+    }
+  }
+  .menu__user {
+    @include collum(15px, 15px);
+    margin-left: 40%;
+    @include flex(35%);
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        @include flex(50%);
+        @extend %p-1;
+        @include border-right(1px,$color_border);
+
+        text-align: center;
+        &.-left {
+          @include border-left(1px,$color_border);
+        }
+        a {
+          text-decoration: none;
+          color: $color_black;
+          font-size: 12px;
+          font-weight: $font_w600;
+        }
+        &:hover {
+          a {
+            color: $color_white;
+          }
+          background-color: $color_or;
+          border: 0px;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .container {
+      max-width: 100%;
+      padding: 0;
+    }
+    .menu__icon {
+      display: none;
+    }
+    .menu__user {
+      margin: 0;
+      border: 0px;
+      @include flex(100%);
+    }
+  }
+}

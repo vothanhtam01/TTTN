@@ -1,0 +1,55 @@
+{
+  "name": "p2-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.1",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "backend-js": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "i18next": "^19.3.2",
+    "i18next-browser-languagedetector": "^4.0.2",
+    "i18next-xhr-backend": "^3.2.2",
+    "json-server": "^0.16.3",
+    "materialize-css": "^1.0.0-rc.2",
+    "multer": "^1.4.2",
+    "node-sass": "5.0.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-facebook": "^8.1.4",
+    "react-i18next": "^11.3.3",
+    "react-redux": "^7.2.8",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "react-share": "^4.0.1",
+    "react-widgets": "^4.4.11",
+    "redux": "^4.0.5",
+    "uniqid": "^5.4.0"
+  },
+  "scripts": {
+ 
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

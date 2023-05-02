@@ -1,0 +1,39 @@
+.news {
+  @extend %p-col-2;
+  .new__title {
+    @include collum(15px, 15px);
+    display: flex;
+    padding-bottom: 40px;
+  }
+  .new__product {
+    @include collum(0, 0);
+    display: flex;
+    @include flex(100%);
+    @media (max-width: 767px) {
+      & {
+        @include flex(100%);
+      }
+    }
+    .product__item:nth-child(1) {
+      @media (max-width: 768px) {
+        & {
+          @include flex(100%);
+        }
+      }
+    }
+    .product__item:nth-child(2) {
+      @media (max-width: 768px) {
+        & {
+          display: none;
+        }
+      }
+    }
+    .product__item:nth-child(3) {
+      @media (max-width: 768px) {
+        & {
+          display: none;
+        }
+      }
+    }
+  }
+}

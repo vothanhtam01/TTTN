@@ -1,0 +1,117 @@
+
+.cart__main {
+  @extend %p-col-2;
+  &.-flex80 {
+    @include flex(70%);
+    margin-left: auto;
+  }
+  .cart__table {
+    @include collum(15px, 15px);
+    @include flex(100%);
+    overflow-x: auto;
+    &.-model {
+      max-height: 324px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      table-layout: fixed;
+
+      tr {
+        @extend %p-col-2;
+        th {
+          @extend %p-col-2;
+          @include border(1px, $color_border);
+          font-size: $font_small;
+          color: $color_black_bt;
+          text-align: center;
+        }
+        td {
+          @include border(1px, $color_border);
+          @extend %p-col-2;
+          font-size: $font_small;
+          color: $color_black_bt;
+          text-align: center;
+          input {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+          }
+          i {
+            color: red;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .sum__table {
+    @include collum(15px, 15px);
+    @include flex(40%);
+    @extend %p-col-2;
+    overflow-x: auto;
+    margin-left: auto;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      table-layout: fixed;
+      tr {
+        @extend %p-2;
+        font-size: $font_small;
+        color: $color_black_bt;
+        th,
+        td {
+          @extend %p-1;
+          @include border(1px, $color_border);
+          font-weight: $font_w600;
+        }
+        td {
+          text-align: right;
+        }
+        td.-red {
+          color: red;
+          font-size: $font_18;
+          font-weight: $font_w600;
+        }
+      }
+    }
+  }
+  .cart__button {
+    @include flex(100%);
+    @include button();
+    @include display_flex();
+    .item__button {
+      @include flex(40%);
+      @include collum(15px, 15px);
+      margin-left: auto;
+      text-transform: uppercase;
+      font-size: $font_small;
+      font-weight: $font_w600;
+      justify-content: flex-end;
+      a {
+        height: 55px;
+        padding: 1.35rem;
+      }
+      a.-right {
+        width: 55%;
+      }
+      a.-left {
+        width: 40%;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    & {
+      .sum__table {
+        @include flex(100%);
+      }
+      .cart__button {
+        .item__button {
+          @include flex(100%);
+        }
+      }
+    }
+  }
+}

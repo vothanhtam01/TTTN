@@ -1,0 +1,15 @@
+.right__item {
+  @include flex(75%);
+  @include collum(15px, 15px);
+  .list__product{ 
+    @include display_flex();
+  }
+  @media (max-width: 767px) {
+    & {
+      @include flex(100%);
+    }
+  }
+  .list__footer {
+    @include footer_page();
+  }
+}

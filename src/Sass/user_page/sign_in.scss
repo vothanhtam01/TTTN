@@ -1,0 +1,79 @@
+.main__user {
+  .login__form {
+    @include collum(15px, 15px);
+    @extend %p-col-2;
+    @include flex(50%);
+    @include display_flex();
+    @include button();
+    @include input_group();
+    h3 {
+      font-size: $font_small;
+      color: $color_black;
+      @extend %pb-1;
+    }
+
+    .check-box__login {
+      @include display_flex();
+      .input {
+        width: 15px;
+        height: 15px;
+      }
+      p {
+        font-size: $font_small;
+        color: $color_black;
+        @extend %pl-1;
+      }
+      a {
+        margin-left: auto;
+        font-size: $font_small;
+        color: $color_or;
+        text-decoration: underline;
+        font-style: italic;
+      }
+    }
+    .item__button {
+      @extend %p-col-2;
+      a {
+        margin: 0;
+        padding: 1rem 0;
+        width: 125px;
+        height: 50px;
+      }
+    }
+  }
+  .login__text {
+    @include collum(15px, 15px);
+    @extend %p-col-2;
+    @include flex(50%);
+    @include button();
+    h3 {
+      font-size: $font_small;
+      color: $color_black;
+      @extend %pb-1;
+    }
+    p {
+      font-size: $font_small;
+      color: $color_list;
+      @extend %pt-1;
+    }
+    .item__button {
+      @extend %p-col-2;
+      a {
+        margin: 0;
+        padding: 1rem 0;
+        width: 125px;
+        height: 50px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    & {
+      .login__form {
+        @include flex(100%);
+      }
+      .login__text {
+        @include flex(100%);
+      }
+    }
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "common": {
+    "rate": "Đánh giá",
+    "highlight": "SẢN PHẨM NỔI BẬT",
+    "new": "SẢN PHẨM MỚI",
+    "hot": "SẢN PHẨM BÁN CHẠY",
+    "lasest": "HÀNG MỚI VỀ",
+    "same": "SẢN PHẨM TƯƠNG TỰ",
+    "feedback": "Gửi bình luận của bạn"
+  },
+  "header": {
+    "menu": {
+      "1": "TRANG CHỦ",
+      "2": "GIỚI THIỆU",
+      "3": "SẢN PHẨM",
+      "4": "TIN KHUYẾN MÃI",
+      "5": "DỊCH VỤ",
+      "6": "LIÊN HỆ"
+    },
+    "order": "ĐẶT HÀNG NHANH :",
+    "hello": "Chào ",
+    "search": "Tìm kiếm..."
+  },
+  "button": {
+    "buy": "MUA HÀNG",
+    "buyNow": "MUA NGAY",
+    "login": "ĐĂNG NHẬP",
+    "regis": "ĐĂNG KÍ",
+    "logout": "ĐĂNG XUẤT",
+    "detail": "XEM CHI TIẾT",
+    "back": "QUAY LẠI",
+    "confirm": "XÁC NHẬN",
+    "cart": "GIỎ HÀNG",
+    "home": "TRANG CHỦ"
+  },
+  "cart": {
+    "table": {
+      "number": "STT",
+      "pro": "SẢN PHẨM",
+      "info": "THÔNG TIN",
+      "price": "ĐƠN GIÁ",
+      "count": "SỐ LƯỢNG",
+      "priceTotal": "THÀNH TIỀN",
+      "del": "XÓA"
+    },
+    "empty": {
+      "1": "Giỏ của bạn đang trống"
+    },
+    "buy": {
+      "1": "TỔNG TIỀN:",
+      "2": "THUẾ (VAT):",
+      "3": "THANH TOÁN:",
+      "4": "tiếp tục mua hàng",
+      "5": "thanh toán"
+    },
+    "warning": {
+      "1": "Hãy đăng nhập để xem giỏ hàng của mình",
+      "2": "Đã xóa sản phẩm ra khỏi giỏ hàng"
+    }
+  },
+  "footer": {
+    "infor": {
+      "1": "VỀ CHÚNG TÔI",
+      "2": "Thương hiệu hàng đầu về đồ nội thất",
+      "3": "Tầng 4 - Tòa nhà Hanoi Group 442 Đội Cấn Ba Đình - Hà Nội",
+      "4": "support@dkt.com.vn",
+      "5": "(84-4) 66558868 - (84-4) 37868904"
+    },
+    "item": {
+      "policy": {
+        "title": "CHÍNH SÁCH",
+        "1": "Chính sách giao hàng",
+        "2": "Chính sách đổi sản phẩm",
+        "3": "Chính sách bảo hành",
+        "4": "Chính sách trả góp",
+        "5": "Giới thiệu hàng đổi trả",
+        "6": "Vận chuyển miễn phí"
+      },
+      "service": {
+        "title": "DỊCH VỤ & HỖ TRỢ",
+        "1": "Hệ thống của hàng",
+        "2": "Hướng dẫn mua hàng",
+        "3": "Hướng dẫn thanh toán",
+        "4": "Tích điểm đổi thưởng",
+        "5": "Dịch vụ trả hàng",
+        "6": "Câu hỏi thường gặp"
+      },
+      "news": {
+        "title": "TIN TỨC-SỰ KIỆN",
+        "1": "Tin tức mới nhất",
+        "2": "Tin tức khuyến mãi",
+        "3": "Tuyển dụng, đãi ngộ",
+        "4": "Download tài liệu",
+        "5": "Chương trình đối tác",
+        "6": "Nhà phát triển ứng dụng"
+      },
+      "icons": {
+        "title": "KẾT NỐI",
+        "1": {
+          "text": "Facebook",
+          "icon": "fab fa-facebook-f"
+        },
+        "2": {
+          "text": "Twitter",
+          "icon": "fab fa-twitter"
+        },
+        "3": {
+          "text": "Google",
+          "icon": "fab fa-google-plus"
+        },
+        "4": {
+          "text": "Skype",
+          "icon": "fab fa-skype"
+        },
+        "5": {
+          "text": "Instagram",
+          "icon": "fab fa-instagram"
+        }
+      }
+    }
+  },
+  "grid": {
+    "orderBy": "Sắp xếp theo:",
+    "show": "Show:",
+    "first": "Trang Đầu",
+    "last": "Trang cuối"
+  },
+  "login": {
+    "title": "THÔNG TIN ĐĂNG NHẬP",
+    "username": "Tên đăng nhập",
+    "password": "Mật khẩu",
+    "remember": "Ghi nhớ đăng nhập",
+    "forgot": "Bạn quên mật khẩu ?",
+    "warning": {
+      "empty": "Tài khoản này không tồn tại",
+      "success": "Đăng nhập thành công",
+      "wrong": "Mật khẩu của bạn không đúng"
+    },
+    "regis": {
+      "1": "BẠN CHƯA CÓ TÀI KHOẢN ?",
+      "2": "Đăng ký tài khoản để mua hàng nhanh hơn. Theo dõi đơn đặt hàng, vận chuyển. Cập nhật các tin tức sự kiện và các chương trình giảm giá của chúng tôi."
+    }
+  },
+  "register": {
+    "warning": {
+      "fill": "Xin hãy điền đầy đủ thông tin",
+      "phone": "SĐT chỉ có thể nhập số",
+      "confirmPass": "Mật khẩu không trùng khớp",
+      "accountExist": "Tài khoản của bạn đã tồn tại",
+      "success": "Đăng kí thành công",
+      "same": "Mật khẩu và username không nên trùng nhau"
+    },
+    "title1": "THÔNG TIN CÁ NHÂN",
+    "name": "Họ và tên",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "address": "Địa chỉ",
+    "receiveInfo": "Đăng kí nhận tin tức qua mail",
+    "title2": "THÔNG TIN ĐĂNG NHẬP",
+    "confirm": "Nhập lại mật khẩu"
+  },
+  "detail": {
+    "infoDetail": "Thông tin sản phẩm :",
+    "size": "--Chọn Size--",
+    "color": "--Chọn Màu--",
+    "info": "THÔNG TIN SẢN PHẨM",
+    "cmt": "ĐÁNH GIÁ - NHẬN XÉT",
+    "content": "Thành Công là sàn thương mại điện tử chuyên cung cấp các sản phẩm nội thất và trang trí nội thất cho thị trường Việt Nam. Chúng tôi tin rằng hạnh phúc của mỗi gia đình đều được vun đắp từ nhà, không gian sống tạo dựng giá trị cuộc sống. Chính vì vậy mục tiêu, sứ mệnh mà Công Thành hướng tới là đem đến những giải pháp tối ưu về nội thất cho nhà ở, văn phòng… Với con đường mà Thành Công đã chọn, chúng tôi mong muốn được cùng xây tổ ấm với triệu gia đình Việt đồng thời cùng chung tay kiến tạo không gian làm việc chuyên nghiệp với các doanh nghiệp tại Việt Nam.",
+    "update": "Đã cập nhật vào giỏ hàng",
+    "warning": "Đăng nhập để thực hiện thao tác này",
+    "addCart": "Đã thêm vào giỏ hàng",
+    "feedback": "Bạn cần phải chọn số sao mình muốn đánh giá",
+    "popup": "Gửi đánh giá thành công"
+  },
+  "banner": {
+    "1": "Poliform được thành lập năm 1970 (tiền thân là công ty chuyên về thủ công từ 1942), dòng sản phẩm chính của thương hiệu này là tủ quần áo, bao gồm tủ (tủ, tủ TV, tủ sách), ghế sofa, bàn ghế, giường ngủ và nhà bếp. Poliform là một công ty nội thất điển hình của Ý, tiên phong trong ngành đồ gỗ nội thất quốc tế. Ngày nay, Poliform nổi tiếng khắp thế giới với hình thức cung cấp sản phẩm nội thất đẹp nhất và đậm truyền thống, đa dạng về mẫu mã.",
+    "2": "POLIFORM" 
+  },
+  "user": {
+    "1": "Profile",
+    "2": "The information can be edited",
+    "3": "Lịch sử giỏ hàng",
+    "4": "Thay đổi mật khẩu",
+    "5": "Change Password",
+    "6": "The password can be edited",
+    "stt": "Order Ref",
+    "date": "Date",
+    "total": "Total",
+    "status": "Status"
+  },
+  "order": {
+    "1": "Bạn xác nhận mua ",
+    "2": "với giá",
+    "3": "Giỏ hàng của bạn đang trống hoặc bạn chưa xác nhận lại giỏ hàng của mình",
+    "4": "Cảm ơn bạn đã mua hàng ở shop chúng thôi, chúng tôi sẽ liên lạc với bạn sớm nhất để xác nhận đơn hàng",
+    "5": "Đặt hàng thành công"
+  },
+  "dashboard": {
+    "admin": "Admin",
+    "menu": {
+      "Dashboard": "Dashboard",
+      "Carts": "Carts",
+      "Products": "Products",
+      "Users": "Users",
+      "Account": "Account"
+    },
+    "warning": {
+      "1": "Bạn có chắc chắn không ?",
+      "2": "Xóa thành công",
+      "3": "Cập nhật thành công",
+      "4": "Giá tiền phải là số"
+    },
+    "table": {
+      "1": "Users Id",
+      "2": "Customer",
+      "3": "Phone",
+      "4": "Addrres",
+      "5": "Delete"
+    },
+    "form": {
+      "1": "Nobody",
+      "2": "Profile",
+      "3": "The information can be edited",
+      "4": "Name",
+      "5": "Email",
+      "6": "Phone Number",
+      "7": "Address",
+      "8": "Password",
+      "9": "Confirm Password",
+      "10": "SAVE DETAILS",
+      "11": "Total product",
+      "12": "Total pay"
+    },
+    "carts": {
+      "1": "Code",
+      "2": "Username",
+      "3": "Time Order",
+      "4": "Total Money",
+      "5": "Status",
+      "6": "Chỉnh sửa đơn hàng thành công !!!"
+    },
+    "dash": {
+      "1": "Top 5 product",
+      "2": "Top 5 user",
+      "3": "Top Product",
+      "4": "Top User",
+      "5": "Statistical",
+      "6": "Product category"
+    },
+    "products": {
+      "1": "ID",
+      "2": "Name",
+      "3": "Price",
+      "4": "Category",
+      "5": "Information of product",
+      "6": "Bought",
+      "7": "Category",
+      "8": "Upload",
+      "9": "Add New",
+      "10": "Add Product",
+      "11": "Fill information your new product",
+      "12": "Thêm mới sản phẩm thành công !!!"
+    }
+  },
+  "error": {
+    "1": "404 error",
+    "2": "Đã xảy ra lỗi!",
+    "3": "Xin vui lòng trở về trang chủ"
+  }
+}

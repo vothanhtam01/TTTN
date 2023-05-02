@@ -1,0 +1,115 @@
+@import "./Sass/extend.scss";
+@import "./Sass/mixin.scss";
+@import "./Sass/var.scss";
+@import "./Sass/deafault.scss";
+@import "./Sass/header/header_master.scss";
+@import "./Sass/titlle/title_master.scss";
+@import "./Sass/product_page/product_master.scss";
+@import "./Sass/home_page/home_page_master.scss";
+@import "./Sass/footer/footer_master.scss";
+@import "./Sass/item_position/item_pos_master.scss";
+@import "./Sass/list_grid_page/list_grid_master.scss";
+@import "./Sass//blog_page/blog_master.scss";
+@import "./Sass/user_page/user_master.scss";
+@import "./Sass/cart_page/cart.scss";
+@import "./Sass//error_page/error.scss";
+@import "./Sass/pop_up/pop_up.scss";
+@import "./Sass/slider_page/slider_page.scss";
+@import "./Sass/dashboard.scss";
+
+.loader {
+  animation: spin 1s infinite linear;
+  border: solid 2vmin transparent;
+  border-radius: 50%;
+  border-right-color: #09f;
+  border-top-color: #09f;
+  box-sizing: border-box;
+  height: 20vmin;
+  left: calc(50% - 10vmin);
+  position: fixed;
+  top: calc(50% - 10vmin);
+  width: 20vmin;
+  z-index: 1;
+  &:before {
+    animation: spin 2s infinite linear;
+    border: solid 2vmin transparent;
+    border-radius: 50%;
+    border-right-color: #3cf;
+    border-top-color: #3cf;
+    box-sizing: border-box;
+    content: "";
+    height: 16vmin;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 16vmin;
+  }
+  &:after {
+    animation: spin 3s infinite linear;
+    border: solid 2vmin transparent;
+    border-radius: 50%;
+    border-right-color: #6ff;
+    border-top-color: #6ff;
+    box-sizing: border-box;
+    content: "";
+    height: 12vmin;
+    left: 2vmin;
+    position: absolute;
+    top: 2vmin;
+    width: 12vmin;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+input.-right {
+  margin: 0;
+  padding: 1rem 0;
+  width: 125px;
+  height: 50px;
+  color: $color_white;
+  background-color: $color_black_bt;
+  border: none;
+}
+input.-left {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  margin: 5px;
+  text-align: center;
+  color: $color_white;
+  background-color: #f5bd10;
+  border: none;
+  padding: 1rem 2.46rem;
+  max-height: 50px;
+  font-size: 12px;
+  max-width: 120.53px;
+}
+
+.share {
+  margin-left: 5px;
+}
+
+.confirm__text {
+  flex: 0 0 100%;
+  text-align: center;
+  @extend %p-col-1;
+  h4 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #f5bd10;
+    @extend %p-col-1;
+  }
+  h5 {
+    font-size: 20px;
+    font-weight: 500;
+    span {
+      color: red;
+    }
+  }
+}

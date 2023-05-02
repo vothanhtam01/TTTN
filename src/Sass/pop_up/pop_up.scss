@@ -1,0 +1,119 @@
+
+.pop-up {
+  width: 800px;
+  height: 400px;
+  background-image: url(/src/img/popup_bg.jpg);
+  position: relative;
+  .pop-up__close{
+    position: absolute;
+    top:0;
+    right: 0;
+    a{
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+      background-color: black;
+      text-align: center;
+      i{
+        padding: 9px 0;
+        color: $color_or;
+      }
+    }
+  }
+  .pop-up__text {
+    @include collum($pixel_15, $pixel_15);
+    @include button();
+    .item__button {
+      a {
+        width: 75%;
+        height: 60px;
+        font-size: $font_medium;
+        padding: 23px;
+      }
+    }
+    text-align: center;
+    @extend %p-col-2;
+    h3 {
+      @extend %pt-2;
+      font-size: $font_large;
+      color: $color_black_bt;
+    }
+    .pop-up__info {
+      @extend %p-col-1;
+      font-size: $font_medium;
+      color: $color_black_bt;
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0.5rem;
+      }
+    }
+  }
+  input {
+    font-size: $font_small;
+    color: rgb(99, 99, 99);
+    width: 75%;
+    height: 60px;
+    @extend %pl-1;
+  }
+  .check-box {
+    @extend %pt-1;
+    @include display_flex();
+    margin-left: 13%;
+    label {
+      display: block;
+      position: relative;
+      @extend %pl-2;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-size: 22px;
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      .check-mark {
+        position: absolute;
+        top: -4px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+      }
+      &:hover input ~ .check-mark {
+        background-color: #ccc;
+      }
+      & input:checked ~ .check-mark {
+        background-color: $color_or;
+      }
+      .check-mark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      & input:checked ~ .check-mark:after {
+        display: block;
+      }
+      & .check-mark:after {
+        left: 6px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+    p {
+      color: $color_black_bt;
+      font-size: $font_small;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+
+.main__list {
+  @extend %p-col-2;
+  .right__item {
+    margin-top: -30px;
+    @extend %pb-2;
+    .list__header {
+      @include collum(15px, 15px);
+      @include flex(100%);
+      @include display_flex();
+      @extend %p-2;
+
+      .order__style {
+        position: relative;
+        @include display_flex();
+        align-self: center;
+        &.-small {
+          @extend %pl-1;
+        }
+        i {
+          color: $color_list;
+          position: absolute;
+          right: 5px;
+          top: 8px;
+        }
+        input {
+          @include list_input();
+        }
+      }
+      .order__button {
+        @include display_flex();
+        margin-left: auto;
+        span {
+          display: block;
+          margin: auto 10px;
+          width: 35px;
+          height: 35px;
+          @include border(0.5px,$color_list);
+          text-align: center;
+          i {
+            color: $color_list;
+            font-size: $font_18;
+            padding-top: 8px;
+            &.-active {
+              color: $color_or;
+            }
+          }
+          &:hover {
+            i {
+              color: $color_or;
+            }
+          }
+        }
+      }
+      p {
+        font-size: $font_small;
+        margin: auto;
+      }
+
+      @media (max-width: 767px) {
+        & {
+          .order__style {
+            margin: 15px auto;
+              &.-small {
+                display: none;
+              }
+            }
+          
+          .order__button {
+            display: none;
+          }
+        }
+      }
+    }
+    .product__last {
+      @include flex(100%);
+      @extend %p-col-1;
+      @media (max-width: 768px) {
+        &.-hide {
+          display: block;
+        }
+      }
+      .img__last {
+        @include flex(100%);
+        text-align: center;
+      }
+      .text__last {
+        @include flex(100%);
+        text-align: center;
+      }
+      @media (min-width: 768px) {
+        & {
+          .img__last {
+            @include flex(24%);
+          }
+          .text__last {
+            @include flex(76%);
+            text-align: start;
+            .item__button {
+              justify-content: flex-start;
+            }
+          }
+        }
+      }
+    }
+    .product__item {
+      @media (max-width: 768px) {
+        &.-hide {
+          display: block;
+        }
+      }
+    }
+
+  }
+}

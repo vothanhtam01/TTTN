@@ -1,0 +1,32 @@
+.title_list {
+  @include flex(60%);
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: auto;
+  text-align: center;
+  @media (max-width : 767px) {
+    &{
+      display: none;
+    }
+  }
+  a {
+    @include flex(20%);
+    text-decoration: none;
+    font-size: $font_13;
+    display: block;
+    max-width: 82px;
+    height: 32px;
+    padding: 8px;
+    margin: 0 5px;
+    color: $color_list;
+    @include border(1px,$color_list);
+
+    &:hover {
+      & {
+        border: none;
+        background-color: $color_or;
+        color: $color_white;
+      }
+    }
+  }
+}

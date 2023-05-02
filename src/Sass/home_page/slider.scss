@@ -1,0 +1,200 @@
+.slider {
+  @extend %p-col-2;
+  .slider__item {
+    background-color: $color_slide;
+    @include collum(15px, 15px);
+    @include flex(65%);
+
+    .slider__content {
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+      .slider__button{
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        translate: (-50%,0);
+        span{
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background-color: rgb(161, 161, 161);
+          margin: 0 5px;
+          &.-center{
+            background-color: $color_bg-menu;
+          }
+          &:hover{
+            background-color: $color_bg-menu;
+          }
+        }
+      }
+      .slide__show {
+        position: relative;
+        touch-action: manipulation;
+        &:hover {
+          animation-play-state: paused;
+        }
+        @media (min-width: 992px) {
+          & {
+            width: 2340px;
+            animation: slide 10s ease infinite;
+            .slide__img {
+              width: 750px;
+              float: left;
+              touch-action: pan-y;
+            }
+            @-webkit-keyframes slide {
+              0% {
+                left: 0px;
+              }
+              50% {
+                left: -750px;
+              }
+              100% {
+                left: -1500px;
+              }
+            }
+          }
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+          & {
+            width: 1714.02px;
+            animation: slide 10s ease infinite;
+            .slide__img {
+              width: 541.34px;
+              float: left;
+              touch-action: pan-y;
+            }
+            @-webkit-keyframes slide {
+              0% {
+                left: 0px;
+              }
+              50% {
+                left: -571.34px;
+              }
+              100% {
+                left: -1142.68px;
+              }
+            }
+          }
+        }
+
+        @media (min-width: 576px) and (max-width: 768px) {
+          & {
+            width: 2130px;
+            animation: slide 10s ease infinite;
+            .slide__img {
+              width: 680px;
+              float: left;
+              touch-action: pan-y;
+            }
+            @-webkit-keyframes slide {
+              0% {
+                left: 0px;
+              }
+              50% {
+                left: -710px;
+              }
+              100% {
+                left: -1420px;
+              }
+            }
+          }
+        }
+        @media (min-width: 400px) and (max-width: 576px) {
+          & {
+            width: 1620px;
+            animation: slide 10s ease infinite;
+            .slide__img {
+              width: 510px;
+              float: left;
+              touch-action: pan-y;
+            }
+            @-webkit-keyframes slide {
+              0% {
+                left: 0px;
+              }
+              50% {
+                left: -540px;
+              }
+              100% {
+                left: -1080px;
+              }
+            }
+          }
+        }
+        @media (min-width: 320px) and (max-width: 400px) {
+          & {
+            width: 960px;
+            animation: slide 10s ease infinite;
+            .slide__img {
+              width: 320px;
+              float: left;
+              touch-action: pan-y;
+            }
+            @-webkit-keyframes slide {
+              0% {
+                left: 0px;
+              }
+              50% {
+                left: -320px;
+              }
+              100% {
+                left: -640px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .slider__text {
+    @include collum(0px, -15px);
+    @include flex(35%);
+    display: flex;
+    flex-direction: column;
+    .slider__content {
+      padding: 10px;
+      @include flex(25%);
+      max-height: 25%;
+      max-width: 100%;
+      display: flex;
+      i {
+        @include flex(15%);
+        color: $color_or;
+        font-size: $font_large;
+      }
+      .text__info {
+        @include flex(85%);
+        h3 {
+          font-size: $font_medium;
+        }
+        p {
+          font-size: $font_13;
+          color: rgb(137, 137, 137);
+        }
+      }
+      &:hover {
+        background-color: $color_or;
+        i {
+          color: $color_white;
+        }
+        h3 {
+          color: $color_white;
+        }
+        p {
+          color: $color_white;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .slider__item {
+      @include flex(100%);
+    }
+    .slider__text {
+      @include flex(100%);
+    }
+  }
+}

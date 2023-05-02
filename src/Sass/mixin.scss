@@ -1,0 +1,164 @@
+@mixin container() {
+  -moz-text-align-last: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+}
+@mixin row() {
+  position: relative;
+  min-height: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  align-self: center;
+}
+@mixin collum($left, $right) {
+  position: relative;
+  padding-left: $left;
+  padding-right: $right;
+  width: 100%;
+}
+@mixin flex($percent) {
+  flex: 0 0 $percent;
+  max-width: $percent;
+}
+@mixin display_flex(){
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin center() {
+  align-self: center;
+}
+@mixin with_cus($percent) {
+  width: $percent;
+}
+
+@mixin border($px,$color)
+{
+  border : solid $px $color;
+}
+
+@mixin border-top($px,$color)
+{
+  border-top : solid $px $color;
+}
+
+@mixin border-bottom($px,$color)
+{
+  border-bottom : solid $px $color;
+}
+
+@mixin border-left($px,$color)
+{
+  border-left : solid $px $color;
+}
+
+@mixin border-right($px,$color)
+{
+  border-right : solid $px $color;
+}
+
+@mixin button {
+  .item__button {
+    display: flex;
+    justify-content: center;
+    &.-start{
+      justify-content: flex-start;
+      @media (max-width:767px) {
+        &{
+          justify-content: center;
+        }        
+      }
+    }
+    a {
+      color: $color_white;
+      text-decoration: none;
+      display: block;
+      font-size: 12px;
+      margin: 5px;
+      padding: 13px;
+      text-align: center;
+      &.-left {
+        background-color: $color_or;
+      }
+      &.-right {
+        background-color: $color_black_bt;
+      }
+    }
+  }
+}
+
+@mixin list_input(){
+  font-size: $font_small;
+  color: $color_list;
+  margin-left: 10px;
+  height: 35px;
+  width: 165px;
+  padding-left: 5px;
+  &.-small{
+    width: 90px;
+  }
+}
+
+@mixin rate__star(){
+  padding: 5px;
+  font-size: 12px;
+  color: $color_list;
+  padding-left: 0;
+  i {
+    color: $color_or;
+    padding: 0 1px;
+    &.-white {
+      border-color: $color_or;
+      color: $color_white;
+    }
+    cursor: pointer;
+  }
+}
+@mixin footer_page(){
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  span {
+    padding: 10px;
+    color: $color_list;
+    border: solid 0.5px $color_list;
+    margin: 4px;
+    &:hover {
+      background-color: $color_or;
+      color: white;
+    }
+  }
+}
+
+@mixin input_group(){
+  .form__info__item {
+    @include flex(48%);
+    &.-first{
+      margin-right:4%;
+    }
+    &.-one{
+      @include flex(100%);
+      margin-right: 0%;
+    }
+    @media (max-width: 767px) {
+      @include flex(100%);
+    }
+    input {
+      margin: 1rem 0;
+      width: 100%;
+      height: 40px;
+    }
+    span{
+      color: red;
+    }
+  }
+}
+
+
+

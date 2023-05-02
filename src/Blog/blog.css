@@ -1,0 +1,21 @@
+.img:hover{
+    width:"500";
+     height:"333";
+     cursor: pointer;
+}
+.h3{
+    text-align: center;
+    text-transform:uppercase;
+    color:aqua;
+}
+.p{
+ font-size: 22px;
+ font-style: italic;
+ color: maroon;
+ text-align: center;
+}
+.nl{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-style: italic;
+}
